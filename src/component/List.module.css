@@ -1,0 +1,24 @@
+.list{    
+    display: flex;
+    flex-direction: column;
+    align-items: left;  
+    margin-bottom: 0;     
+    
+    padding-left: 0;      
+}
+
+.list > li{
+    margin-bottom: .5em;    
+    padding-left: 1em;
+    margin-left: 1.5em;
+}
+
+.list > li::marker {
+    color: hsl(332, 51%, 32%);
+    margin-right: 50px;
+    font-weight: bold;     
+}
+
+.notOrdened > li::marker{
+    font-size: .7em;
+}
