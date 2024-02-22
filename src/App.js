@@ -29,54 +29,59 @@ function App() {
 
 
   return (
-    <div className="App">            
-      <img src={OmeletteImage} alt="an omellete"/>
-      <h1>Simple Omelette Recipe</h1>
-      <p>
-        An easy and quick dish, perfect for any meal.
-        This classic omelette combines beaten eggs cooked to perfection,
-        optionally filled with your choice of cheese, begetables, or meats.
-      </p>
+    <div className="App">
+      <div className='imgSection'>
+        <img src={OmeletteImage} alt="an omellete" />
+      </div>
 
-      <div className="timeSection">
-        <h2>Preparation time</h2>
+      <div className="contentSection">
+        <h1>Simple Omelette Recipe</h1>
+        <p>
+          An easy and quick dish, perfect for any meal.
+          This classic omelette combines beaten eggs cooked to perfection,
+          optionally filled with your choice of cheese, begetables, or meats.
+        </p>
+
+        <div className="timeSection">
+          <h2>Preparation time</h2>
+          <List
+            arrayText={preparationTime}
+            ordenedList={false}
+          />
+        </div>
+        <h2>Ingredients</h2>
         <List
-          arrayText={preparationTime}
+          arrayText={ingredients}
           ordenedList={false}
         />
+        <hr />
+        <h2>Instructions</h2>
+        <List
+          arrayText={instructions}
+          ordenedList={true}
+        />
+        <h2>Nutrition</h2>
+        <p>The table below shows nutritional values per serving without the additional fillings.</p>
+        <div className="nutritionTable">
+          <p>Calories</p>
+          <span>277kcal</span>
+        </div>
+        <hr />
+        <div className="nutritionTable">
+          <p>Carbs</p>
+          <span>0g</span>
+        </div>
+        <hr />
+        <div className="nutritionTable">
+          <p>Protein</p>
+          <span>20g</span>
+        </div>
+        <hr />
+        <div className="nutritionTable">
+          <p>Fat</p>
+          <span>22g</span>
+        </div>
       </div>
-      <h2>Ingredients</h2>
-      <List
-        arrayText={ingredients}
-        ordenedList={false}
-      />
-      <hr/>
-      <h2>Instructions</h2>
-      <List
-        arrayText={instructions}
-        ordenedList={true}
-      />
-      <h2>Nutrition</h2>
-      <p>The table below shows nutritional values per serving without the additional fillings.</p>
-      <div className="nutritionTable">
-        <p>Calories</p>
-        <span>277kcal</span>        
-      </div>
-      <hr/>
-      <div className="nutritionTable">
-        <p>Carbs</p>
-        <span>0g</span>        
-      </div>
-      <hr/>
-      <div className="nutritionTable">
-        <p>Protein</p>
-        <span>20g</span>        
-      </div>
-      <hr/>
-      <div className="nutritionTable">
-        <p>Fat</p>
-        <span>22g</span>        
-      </div>      
     </div>
   );
 }

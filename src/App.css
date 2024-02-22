@@ -1,27 +1,35 @@
 .App{    
     max-width: 55%;
     margin: 5em auto;
-    border-radius: 1em;
-    padding: 2em;
+    border-radius: 1em;    
     display: flex;
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
     font-family: "Outfit", sans-serif;
 }
 
-.App > img{
-    max-width: 100%;
-    border-radius: 1em;
+.imgSection{
+    padding: 2em;
 }
 
-.App > h1{
+img{   
+    width: 100%; 
+    border-radius: 1em; 
+}
+
+.contentSection{
+    padding: 0 2em;
+}
+
+h1{
     font-family: "Young Serif", sans-serif;
     font-weight: 400;    
     margin-bottom: 0;
     font-size: 40px;
+    margin-top: 0;
 }
 
-.App > p {    
+p {    
     font-size: 16px;
     
 }
@@ -78,4 +86,13 @@ hr{
       height: 100%;  
       margin: 0 auto;    
     }    
+
+    img{               
+        border-radius: 0;
+    }
+
+    .imgSection{
+        padding: 0;
+        margin-bottom: 2em;
+    }
   }
