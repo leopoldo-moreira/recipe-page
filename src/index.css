@@ -2,4 +2,5 @@ body{
     max-width: 1440px;
     margin: auto auto;
     background-color: hsl(30, 54%, 90%);
+    zoom: 100%;
 }
