@@ -18,7 +18,7 @@ img{
 }
 
 .contentSection{
-    padding: 0 2em;
+    padding: 0 2em 2em 2em;
 }
 
 h1{
@@ -31,7 +31,7 @@ h1{
 
 p {    
     font-size: 16px;
-    
+    line-height: 1.5;
 }
 
 h2{
@@ -76,7 +76,7 @@ h2{
 
 hr{    
     width: 100%;
-    border-top: 0;
+    border-top: 0;    
     margin: 0;
 }
 

@@ -39,7 +39,7 @@ function App() {
         <p>
           An easy and quick dish, perfect for any meal.
           This classic omelette combines beaten eggs cooked to perfection,
-          optionally filled with your choice of cheese, begetables, or meats.
+          optionally filled with your choice of cheese, vegetables, or meats.
         </p>
 
         <div className="timeSection">
